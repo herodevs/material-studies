@@ -1,10 +1,10 @@
 # Steeps to test schematics
 
 - build the schematics library locally
- - `cd libs/schematics`
- - `npm run build`
+ - `nx workspace-schematic fortnightly-prep`
 
 - Pack the library
+ - `cd libs/schematics`
  - `npm pack`
 
 - Copy to your Angular workspace
@@ -12,7 +12,7 @@
 
 - Install and run the schematics
  - `npm i --save-dev fortnightly-*.*.*.tgz`
- - `ng g .\node_modules\fortnightly\src\collection.json:fortnightly`
+ - ` ng g .\node_modules\@herodevs\fortnightly\src\collection.json:fortnightly`
 
 - serve your project
  - `ng serve`

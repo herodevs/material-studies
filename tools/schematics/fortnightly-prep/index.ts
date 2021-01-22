@@ -30,6 +30,7 @@ function moveProjectFiles() {
     destDir.visit(file => {
       if (file.endsWith('.component.ts') ||
         file.endsWith('.directive.ts') ||
+        file.endsWith('.scss') ||
         file.endsWith('.html')) {
         updateFile(tree, file, updatePrefix);
       }
@@ -49,7 +50,8 @@ function updatePrefix(contents: string): string {
     .replace(/<msc\-/g, '<<%= prefix %>-')
     .replace(/<\/msc\-/g, '</<%= prefix %>-')
     .replace(/selector: '\[msc/g, `selector: '[<%= prefix %>`)
-    .replace(/\[msc/g, '[<%= prefix %>');
+    .replace(/\[msc/g, '[<%= prefix %>')
+    .replace(/msc\-/g, '<%= prefix %>-');
 }
 
 function updateFile(tree: Tree, path: Path, fn: (string) => string): void {
