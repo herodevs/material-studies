@@ -1,0 +1,13 @@
+<nav mat-tab-nav-bar mat-align-tabs="center" animationDuration="0ms">
+  <a
+    mat-tab-link
+    class="adopt-a-pup-tab"
+    *ngFor="let tab of tabs"
+    (click)="update(tab.link)"
+    [active]="tab.link === link"
+    [routerLink]="'/' + tab.link"
+    [attr.aria-label]="tab.title"
+  >
+    {{ tab.title }}
+  </a>
+</nav>

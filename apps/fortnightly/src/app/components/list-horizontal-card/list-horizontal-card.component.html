@@ -1,0 +1,14 @@
+<p class="small-title small-title-p" *ngIf="size !== 'big' && !search">
+  {{ title }}
+</p>
+<div
+  class="mat-layout-grid__cell"
+  *ngFor="let contentCard of cardContent"
+  [class.big]="size === 'big'"
+>
+  <msc-horizontal-card
+    [search]="search"
+    [size]="size"
+    [content]="contentCard"
+  ></msc-horizontal-card>
+</div>

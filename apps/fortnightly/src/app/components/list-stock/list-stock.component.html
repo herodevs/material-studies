@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="stock-list chart">
+    <msc-stock-chart></msc-stock-chart>
+  </div>
+  <div class="stock-list" *ngFor="let stock of stocks">
+    <msc-stock [stock]="stock"></msc-stock>
+  </div>
+</div>

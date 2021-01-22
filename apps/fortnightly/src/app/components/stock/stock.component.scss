@@ -1,0 +1,21 @@
+mat-card-title {
+  margin-bottom: 2%;
+}
+span {
+  float: right;
+}
+
+.mat-card-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  mat-card-title.mat-card-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  mat-card-subtitle.mat-card-subtitle {
+    font-size: 12px;
+  }
+}

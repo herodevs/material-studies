@@ -1,0 +1,13 @@
+<a
+  [attr.aria-label]="content.title"
+  class="mat-card_primary-action"
+  [routerLink]="'/article/' + content.link">
+  <mat-card matRipple [routerLink]="'/article/' + content.link" [attr.aria-label]="content.title">
+    <img mat-card-image [src]="content.image" [alt]="content.imageAlt" />
+    <mat-card-content>
+      <mat-card-subtitle>{{ content.subtitle }}</mat-card-subtitle>
+      <mat-card-title>{{ content.title }}</mat-card-title>
+      <p>{{ content.text }}</p>
+    </mat-card-content>
+  </mat-card>
+</a>

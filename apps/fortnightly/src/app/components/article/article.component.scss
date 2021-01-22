@@ -1,0 +1,137 @@
+@import '../../../theming-fortnightly';
+
+.article-image {
+  max-width: 880px;
+  height: auto;
+  margin: auto;
+}
+.article-image img {
+  width: 100%;
+}
+.article-content {
+  height: auto;
+  padding: 10px;
+  margin: auto;
+}
+.article-meta {
+  width: 100%;
+  height: auto;
+  max-width: 880px;
+  margin: auto;
+}
+.article-category {
+  font-family: $font-libre-franklin;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.16667em;
+  text-decoration: none;
+  text-transform: capitalize;
+  // color: #333333;
+  text-transform: uppercase;
+}
+.article-title {
+  font-family: $font-merriweather;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 27px;
+  line-height: 2rem;
+  font-weight: 900;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 0.0125em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  letter-spacing: 0;
+}
+.article-oneliner {
+  font-family: $font-merriweather;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.375rem;
+  font-weight: 400;
+  letter-spacing: 0.00714em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  // color: #333333;
+  opacity: 0.64;
+  margin-top: 4px;
+}
+.article-author {
+  display: inline-block;
+  margin: 16px 0px;
+}
+.author-image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.author-name {
+  font-family: $font-merriweather;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.03125em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  // color: #333333;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 2px solid #bcbcbc;
+}
+.author-by {
+  display: inline-block;
+  font-family: $font-libre-franklin;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.00937em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  // color: #333333;
+  opacity: 0.64;
+  margin: 0px 4px;
+  text-decoration: none;
+  border-bottom: 0px solid $secondary-color;
+}
+.article-text {
+  font-family: $font-merriweather;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.03125em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  color: #7b7b7b;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.article-text::first-letter {
+  font-family: $font-merriweather;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  letter-spacing: normal;
+  text-decoration: inherit;
+  text-transform: inherit;
+  font-style: italic;
+  // color: #333333;
+  padding-right: 2px;
+  float: left;
+  font-size: 6rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}

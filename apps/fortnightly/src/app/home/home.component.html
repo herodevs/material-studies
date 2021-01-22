@@ -1,0 +1,23 @@
+<div class="adopt-a-pup-puppers all-headlines adopt-a-pup-body mdc-layout-grid">
+  <div class="mat-layout-grid__inner">
+    <div class="mat-layout-grid__cell grid-big">
+      <msc-list-horizontal-card
+        [size]="'big'"
+        [cardContent]="viewDataSmallCards$ | async"
+      ></msc-list-horizontal-card>
+    </div>
+    <div class="mat-layout-grid__cell grid-small">
+      <msc-list-horizontal-card
+        [title]="'Latests Updates'"
+        [size]="'small'"
+        [cardContent]="viewDataSmallCards2$ | async"
+      ></msc-list-horizontal-card>
+    </div>
+    <div class="mat-layout-grid__cell grid-stock">
+      <msc-list-stock [stocks]="stocks$ | async"></msc-list-stock>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <msc-grid-card [contentCards]="viewDataCards$ | async"></msc-grid-card>
+</div>

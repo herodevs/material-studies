@@ -1,0 +1,31 @@
+<div class="adopt-a-pup--fixed-adjust">
+  <div class="article-image">
+    <img [src]="article.image" />
+  </div>
+  <div class="article-content">
+    <div class="article-meta">
+      <div class="article-category">
+        <msc-chips [chips]="article.chips"></msc-chips>
+      </div>
+      <div class="article-title">{{ article.title }}</div>
+      <div class="article-oneliner">{{ article.subtitle }}</div>
+      <div class="article-author">
+        <div
+          class="author-image"
+          [style.background-image]="'url(' + article.image + ')'"
+        ></div>
+        <div class="author-by">by</div>
+        <div class="author-name">{{ article.author }}</div>
+      </div>
+    </div>
+    <div class="article-text">
+      {{ article.content }}
+    </div>
+  </div>
+  <div class="article-text">
+    <msc-grid-card
+      [title]="'Related Articles'"
+      [contentCards]="article.related"
+    ></msc-grid-card>
+  </div>
+</div>

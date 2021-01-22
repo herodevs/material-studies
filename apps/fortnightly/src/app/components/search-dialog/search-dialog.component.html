@@ -1,0 +1,22 @@
+<div class="close" mat-dialog-close>
+  <a class="mat-ripple mdc-icon-button material-icons drawer-close-icon"
+    >close</a
+  >
+</div>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input
+      autocomplete="off"
+      matInput
+      [(ngModel)]="data.search"
+      (keypress)="search()"
+    />
+  </mat-form-field>
+</div>
+<div class="results">
+  <msc-list-horizontal-card
+    [search]="true"
+    [cardContent]="data$ | async"
+    (click)="onNoClick()"
+  ></msc-list-horizontal-card>
+</div>

@@ -1,0 +1,28 @@
+<mat-card
+  class="mat-elevation-z mat_containers"
+  [class.big-card]="size === 'big'"
+  [routerLink]="'/article/' + content?.link"
+  [attr.aria-label]="content?.title"
+>
+  <mat-card-content>
+    <div *ngIf="search" class="search-content">
+      <mat-card-subtitle>{{ content?.category }}</mat-card-subtitle>
+      <span>{{ content?.views }}</span>
+    </div>
+    <mat-card-subtitle *ngIf="!search"
+      >{{ content?.category }}
+      <span [class.hidden]="size === 'big' || search">{{
+        content?.views
+      }}</span></mat-card-subtitle
+    >
+    <mat-card-title [class.small-title]="size !== 'big'">{{
+      content?.title
+    }}</mat-card-title>
+    <mat-card-footer [class.big-content]="size === 'big' || search">{{
+      content?.subtitle
+    }}</mat-card-footer>
+  </mat-card-content>
+  <div class="image" [class.big-img]="size === 'big'">
+    <img [src]="content?.image" alt="" />
+  </div>
+</mat-card>

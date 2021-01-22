@@ -1,0 +1,14 @@
+<div
+  class="adopt-a-pup-puppers all-headlines adopt-a-pup-body mdc-layout-grid main-container"
+>
+  <p class="small-title small-title-p">{{ title }}</p>
+  <div class="mat-layout-grid__inner grid-container">
+    <div
+      class="mat-layout-grid__cell"
+      [class.mat-layout-grid__cell_4]="title"
+      *ngFor="let contentCard of contentCards"
+    >
+      <msc-card [content]="contentCard"></msc-card>
+    </div>
+  </div>
+</div>

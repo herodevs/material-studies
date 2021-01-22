@@ -1,0 +1,12 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "id": "schematics",
+  "schematics": {
+    "fortnightly-app": {
+      "description": "Add a Fortnightly  app to the workspace.",
+      "factory": "./fortnightly-app/index",
+      "schema": "./fortnightly-app/schema.json",
+      "aliases": ["fortnightly", "app"]
+    }
+  }
+}

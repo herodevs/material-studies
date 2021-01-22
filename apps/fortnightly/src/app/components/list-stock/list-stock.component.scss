@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stock-list,
+msc-stock-chart {
+  flex-grow: 1;
+  min-height: 50px;
+}
+
+.chart {
+  min-width: 20%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    flex-direction: column;
+  }
+}

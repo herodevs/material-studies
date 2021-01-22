@@ -1,0 +1,16 @@
+@import '../../../theming-fortnightly';
+nav {
+  position: sticky;
+}
+
+.mat-tab-link {
+  height: 30px;
+  max-width: 100px;
+  min-width: 50px;
+  width: 20%;
+}
+
+.mat-tab-nav-bar,
+.mat-tab-header {
+  border: none;
+}

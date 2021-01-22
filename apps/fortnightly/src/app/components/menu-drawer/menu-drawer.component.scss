@@ -1,0 +1,145 @@
+a {
+  cursor: pointer;
+}
+
+.mdc-drawer {
+  width: 320px;
+  border-color: rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  border-radius: 0 0px 0px 0;
+  z-index: 6;
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  height: 100%;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-right-width: 1px;
+  border-right-style: solid;
+  overflow: hidden;
+}
+/*
+.mdc-drawer--modal {
+  left: 0;
+  top: 0;
+  right: initial;
+  position: fixed;
+}*/
+
+.mdc-icon-button {
+  --mdc-ripple-fg-translate-end: 0;
+  --mdc-ripple-fg-translate-start: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  will-change: transform, opacity;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  font-size: 24px;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  fill: currentColor;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mdc-drawer__header {
+  padding: 4px;
+  min-height: 64px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.mdc-list {
+  // color: black;
+  font-family: 'Libre Franklin';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.00937em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  // color: #333333;
+  // color: rgba(0, 0, 0, 0.87);
+  color: var(--mdc-theme-text-primary-on-background, rgba(0, 0, 0, 0.87));
+  margin: 0;
+  padding: 8px 0;
+  line-height: 1.5rem;
+  list-style-type: none;
+}
+
+.mdc-drawer .mdc-list-item:nth-child(1) {
+  margin-top: 2px;
+}
+
+.mdc-list .mdc-list-item {
+  border-radius: 0px;
+}
+
+.mdc-drawer .mdc-list-item {
+  font-size: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  font-family: 'Libre Franklin';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.00937em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  color: var(
+    --mdc-theme-text-primary-on-background,
+    rgba(0, 0, 0, 0.87)
+  ) !important;
+  font-size: 18px;
+  height: calc(48px - 2 * 4px);
+  margin: 8px 8px;
+  padding: 0 8px;
+}
+
+.mdc-list-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+:not(.mdc-list--non-interactive)
+  > :not(.mdc-list-item--disabled).mdc-list-item:hover::before {
+  opacity: 0.04;
+}
+
+.mdc-list-item:focus {
+  outline: none;
+}
+
+.mdc-list-item::before {
+  background-color: #000;
+  top: calc(50% - 100%);
+  left: calc(50% - 100%);
+  width: 200%;
+  height: 200%;
+  transition: opacity 15ms linear, background-color 15ms linear;
+  z-index: 1;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  content: '';
+}

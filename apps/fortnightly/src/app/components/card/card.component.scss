@@ -1,0 +1,66 @@
+mat-card {
+  border-radius: 0px;
+}
+
+mat-card.mat-card {
+  padding-top: 0px;
+  margin-top: 16px;
+}
+
+mat-card-subtitle {
+  line-height: 1rem !important;
+  font-family: 'Libre Franklin';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.16667em;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+mat-card-content {
+  max-height: 300px;
+}
+
+mat-card-title {
+  font-family: 'Libre Franklin';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-decoration: inherit;
+  text-transform: inherit;
+  display: block;
+  margin-top: 0;
+  line-height: normal;
+}
+
+.mat-card-image {
+  margin: 0 -16px 0px -16px;
+}
+
+a {
+  text-decoration: none;
+  --mdc-ripple-fg-size: 344px;
+  --mdc-ripple-fg-scale: 1.98796;
+  --mdc-ripple-fg-translate-start: 178px, -168px;
+  --mdc-ripple-fg-translate-end: 4.5px, 115px;
+}
+
+@media (max-width: 820px) {
+  mat-card-title {
+    font-size: 20px;
+  }
+  mat-card-content {
+    p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}

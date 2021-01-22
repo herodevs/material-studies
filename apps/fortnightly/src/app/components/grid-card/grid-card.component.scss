@@ -1,0 +1,59 @@
+@import '../../../theming-fortnightly';
+
+.small-title {
+  font-size: 20px;
+  padding-top: 0px;
+  font-family: $font-merriweather;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.small-title-p {
+  grid-column-end: span 2;
+  margin-top: 40px;
+}
+
+.mat-layout-grid__cell_4 {
+  grid-column-end: span 4;
+}
+
+@media (max-width: 1800px) {
+  .main-container {
+    display: grid;
+    grid-gap: var(--mat-layout-grid-gutter-desktop, 24px);
+    grid-template-columns: 110px 10fr 20px;
+  }
+  .mat-layout-grid__cell {
+    grid-column-end: span 3;
+  }
+  .grid-container {
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    display: grid;
+    grid-gap: var(--mat-layout-grid-gutter-desktop, 24px);
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+  .mat-layout-grid__cell {
+    grid-column-end: span 4;
+  }
+  .grid-container {
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 839px) {
+  .main-container {
+    grid-template-columns: 0;
+  }
+  .grid-container {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .mat-layout-grid__cell {
+    grid-column-end: span 4;
+  }
+}
