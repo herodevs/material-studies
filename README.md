@@ -1,6 +1,6 @@
 # Material Studies
 
-## Fortnighly
+## Fortnightly
 
 This is an angular application build upon the Material Design Case Study which can be found [here](https://material.io/design/material-studies/fortnightly.html).
 
